@@ -26,6 +26,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "babel-polyfill": "^6.26.0",
     "gh-pages": "^2.0.1"
   }
 }

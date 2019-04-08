@@ -17,13 +17,12 @@ class App extends Component {
 
   //shuffles the cat pictures when clicked
   handleClick = id => {
-
-    let clicked = this.state.clicked;
+    console.log(id);
+    const clicked = this.state.clicked;
 
     if(clicked.includes(id)){
       this.setState({ clicked: [], score: 0, message:  "You clicked a cat twice! Try again!" });
       return;
-
     }
 
     else if (clicked.length === Cats.length){
@@ -33,17 +32,15 @@ class App extends Component {
     }
     
     else {
-      this.setState({clicked: this.state.clicked.push(id), score: this.state.score + 1, message: "Good Job! Guess Again!"});
-    } 
-
-      this.setState({ Cats, clicked, score: 0, message: " " });
 
       for (let i = Cats.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
         [Cats[i], Cats[j]] = [Cats[j], Cats[i]];
       }
+      this.setState({ Cats: Cats, clicked: this.state.clicked.push(id), score: this.state.clicked.length, message: "Good Job! You picked a new cat!" });
+      return;
     }
-
+  }
   // Map over this.state.cards and render an image component for each cat object
   render() {
     return (
