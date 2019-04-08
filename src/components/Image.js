@@ -8,6 +8,7 @@ function newPicture(props){
             <img className = "picture"
             src={props.image} 
             alt={props.name}
+            onClick={()=> props.handleClick(props.id)}
             />
        </div>
    );

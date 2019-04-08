@@ -32,7 +32,9 @@ class App extends Component {
       return;
     }
     
-    else clicked.push(id)
+    else {
+      this.setState({clicked: this.state.clicked.push(id), score: this.state.score++, message: "Good Job! Guess Again!"});
+    } 
 
       this.setState({ Cats, clicked, score: 0, message: " " });
 
@@ -54,7 +56,7 @@ class App extends Component {
         <Wrapper>
           {this.state.Cats.map(cat => (
             <Image
-              onClick={()=> this.handleClick(cat.id)}
+              handleClick={this.handleClick}
               id={cat.id}
               key={cat.id}
               image={cat.image}
