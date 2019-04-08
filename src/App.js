@@ -33,7 +33,8 @@ class App extends Component {
     }
     
     else {
-      this.setState({clicked: this.state.clicked.push(id), score: this.state.score++, message: "Good Job! Guess Again!"});
+      this.setState({clicked: this.state.clicked.push(id), score: this.state.score + 1, message: "Good Job! Guess Again!"});
+      console.log(this.state.score)
     } 
 
       this.setState({ Cats, clicked, score: 0, message: " " });
