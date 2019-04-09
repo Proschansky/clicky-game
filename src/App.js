@@ -19,6 +19,7 @@ class App extends Component {
   handleClick = id => {
     console.log(id);
     const clicked = this.state.clicked;
+    console.log(clicked)
 
     if(clicked.includes(id)){
       this.setState({ clicked: [], score: 0, message:  "You clicked a cat twice! Try again!" });
@@ -37,7 +38,7 @@ class App extends Component {
         let j = Math.floor(Math.random() * (i + 1));
         [Cats[i], Cats[j]] = [Cats[j], Cats[i]];
       }
-      this.setState({ Cats: Cats, clicked: this.state.clicked.push(id), score: this.state.clicked.length, message: "Good Job! You picked a new cat!" });
+      this.setState({ Cats: Cats, clicked: [id, ...this.state.clicked], score: this.state.clicked.length, message: "Good Job! You picked a new cat!" });
       return;
     }
   }
