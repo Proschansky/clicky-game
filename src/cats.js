@@ -12,7 +12,7 @@ module.exports = [
     {
         "id": 3,
         "name": "Pepper Cat",
-        "image": "https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy80MTY2MzA0Lzk4MHguanBnIiwiZXhwaXJlc19hdCI6MTU1NDg1ODY5MH0.u7oY-BkG1sN3B0N4k73sxMe7LqyijkI8XJanAzSAcog/img.jpg"
+        "image": "https://i.pinimg.com/originals/98/ff/fc/98fffc34e4f118d56dc674a9290c819a.jpg"
     },
     {
         "id": 4,
