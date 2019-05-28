@@ -22,7 +22,7 @@ module.exports = [
     {
         "id": 5,
         "name": "Scaredy Cat",
-        "image": "http://www.royalcanin.ca/~/media/Royal-Canin-Canada/Product-Categories/cat-kitten-landing-hero-bw.ashx"
+        "image": "https://knowyourphrase.com/wp-content/uploads/2019/02/little-scaredy-cat.jpg"
     },
     {
         "id": 6,
@@ -47,7 +47,7 @@ module.exports = [
       {
           "id": 10,
           "name": "Tin-Foil-Cat",
-          "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41112475%2F29998716295%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C127%2C1280%2C640&s=fb096d0c5bbc0b834d1df89d7e14a287"
+          "image": "https://cdn.shopify.com/s/files/1/1365/2497/files/redcat_large.jpg?v=1522243551"
       },
       {
         "id": 11,
